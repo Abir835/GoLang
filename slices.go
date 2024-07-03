@@ -1,8 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
 	fmt.Println("slices")
-	fmt.Println("SFAD")
+
+	var things = []string{"maleta", "ropa", "reloj"}
+	fmt.Println(things)
+
+	things = append(things, "bolso")
+	fmt.Println(things)
+
+	things = append(things[1 : len(things)-1])
+	fmt.Println(things)
+
+	hero := make([]string, len(things))
+	fmt.Println(hero)
+
+	myInt := []int{1, 2, 3}
+	sort.Sort(sort.Reverse(sort.IntSlice(myInt)))
+	fmt.Println(myInt)
+
 }
