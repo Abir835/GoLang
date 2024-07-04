@@ -1,0 +1,18 @@
+Go has strong and static type;
+Basic Data Type
+1. bool
+2. string
+3. int int8 int16 int32 int64 unit unit8 init16 init32 init64 uintptr
+4. byte // alias for unit8
+5. rune // alias for int32 // represents a Unicode code point
+6. float32 float64
+7. complex64 complex128
+
+":=" this is short assignment operator
+
+Constant must be known at compile time.
+
+when we return in function that time return this variable
+
+what is guard class.
+structs - collection type
