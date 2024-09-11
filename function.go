@@ -1,11 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	fmt.Println(add(3, 2))
 	myResult, name, length := addValue(1, 2, 3, 4, 5)
 	fmt.Println("My Result", myResult, name, length)
+	fmt.Println("Int to String", convertIntToString(1))
 }
 
 func add(x int, y int) int {
@@ -15,6 +19,10 @@ func add(x int, y int) int {
 
 func multiply(x, y int) int {
 	return x * y
+}
+
+func convertIntToString(a int) string {
+	return strconv.Itoa(a)
 }
 
 func addValue(values ...int) (int, string, int) {
