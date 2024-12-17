@@ -11,14 +11,12 @@ type Node struct {
 	Child []Node `json:"child"`
 }
 
-// Recursive function to update the name for a given ID
 func updateNameByID(nodes []Node, id int, newName string) bool {
 	for i := range nodes {
 		if nodes[i].ID == id {
 			nodes[i].Name = newName
 			return true
 		}
-		// Check in the child nodes recursively
 		if updateNameByID(nodes[i].Child, id, newName) {
 			return true
 		}
@@ -27,7 +25,6 @@ func updateNameByID(nodes []Node, id int, newName string) bool {
 }
 
 func main() {
-	// Input JSON
 	jsonData := `
 		[
 			{
@@ -104,14 +101,12 @@ func main() {
 			}
 		]`
 
-	// Parse JSON into Go structure
 	var nodes []Node
 	if err := json.Unmarshal([]byte(jsonData), &nodes); err != nil {
 		fmt.Println("Error parsing JSON:", err)
 		return
 	}
 
-	// Update the name for a specific ID
 	idToUpdate := 6
 	newName := "Md Abir Hasan"
 	if updateNameByID(nodes, idToUpdate, newName) {
@@ -120,7 +115,6 @@ func main() {
 		fmt.Println("ID not found.")
 	}
 
-	// Convert back to JSON to verify the update
 	updatedJSON, err := json.MarshalIndent(nodes, "", "  ")
 	if err != nil {
 		fmt.Println("Error converting back to JSON:", err)
