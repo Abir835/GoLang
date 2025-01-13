@@ -1,4 +1,4 @@
-package NewInitialFlow
+package new_initial_flow
 
 import "fmt"
 

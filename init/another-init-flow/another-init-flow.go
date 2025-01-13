@@ -1,4 +1,4 @@
-package AnotherInitFlow
+package another_init_flow
 
 import "fmt"
 

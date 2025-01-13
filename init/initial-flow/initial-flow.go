@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "GoLang/AnotherInitFlow"
-	"GoLang/NewInitialFlow"
+	_ "GoLang/another-init-flow"
+	"GoLang/init/new-initial-flow"
 	"fmt"
 )
 
@@ -12,5 +12,5 @@ func init() {
 
 func main() {
 	fmt.Println("Initial Flow starting... main")
-	NewInitialFlow.NewInitialFlow()
+	new_initial_flow.NewInitialFlow()
 }
