@@ -24,4 +24,10 @@ func main() {
 	sort.Sort(sort.Reverse(sort.IntSlice(myInt)))
 	fmt.Println(myInt)
 
+	// slice is simmer to array
+	slice := []int{1, 2, 3}
+	sort.Sort(sort.Reverse(sort.IntSlice(slice)))
+	fmt.Println(slice)
+	slice = append(slice, 4)
+	fmt.Println(slice)
 }

@@ -21,4 +21,9 @@ func main() {
 	fmt.Println(len(shorthandArray))
 	fmt.Println(shorthandArray[0])
 
+	// multi dimensional array
+
+	var mulArray = [][]int{{1, 2, 3}, {4, 5, 6}}
+	fmt.Println(mulArray)
+
 }
