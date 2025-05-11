@@ -1,0 +1,4 @@
+
+1. Code Segment -- all function here (all constant value)
+2. Data Segment -- all global variable here
+3. Stack -- execute function and their variable -- stack frame locate

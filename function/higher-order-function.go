@@ -20,4 +20,9 @@ func main() {
 	sum := call()
 	ans := sum(1, 2)
 	fmt.Println(ans)
+
+	a := func(x, y int) {
+		fmt.Println(x + y)
+	}
+	a(1, 2)
 }
